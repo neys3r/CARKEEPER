@@ -24,7 +24,7 @@ namespace C_Presentacio
 
         private void Ag_Form3_Load(object sender, EventArgs e)
         {
-            String ConnectionString = "Server=Winter2;Database=Winter;Trusted_Connection=true";
+            String ConnectionString = "Server=.;Database=Winter;Trusted_Connection=true";
             var query = @"select CustomerID, Name, Phone, VehicleID_FK, email from Customer";
             var cnx = new SqlConnection(ConnectionString);
             var command = new SqlCommand(query, cnx);

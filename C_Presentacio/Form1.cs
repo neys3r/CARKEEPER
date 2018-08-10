@@ -13,6 +13,8 @@ namespace C_Presentacio
 {
     public partial class Form1 : Form
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public Form1()
         {
             InitializeComponent();
@@ -24,7 +26,7 @@ namespace C_Presentacio
             Form2 i = new Form2();
             i.Show();
             this.Hide();
-            String ConnectionString = "Server=Winter2;Database=Winter;Trusted_Connection=true";
+            String ConnectionString = "Server=.;Database=Winter;Trusted_Connection=true";
             SqlCommand cmd = new SqlCommand();
             cmd.CommandText = @"INSERT INTO Incident
                                        (
@@ -35,10 +37,11 @@ namespace C_Presentacio
                                        ( 
                                         @Status, @Location, @date, @CustomerID_FK, @AgentID_FK
                                         , @SupplierID_FK)";
-
+            log.Info("Incidencia 1 creada! 10/08/2018");
+            log.Info("Localización del Incidente: 12.086023,-76.9781308");
 
             cmd.CommandType = CommandType.Text;
-            cmd.Connection = new SqlConnection("Server=Winter2;Database=Winter;Trusted_Connection=true");
+            cmd.Connection = new SqlConnection("Server=.;Database=Winter;Trusted_Connection=true");
             cmd.Connection.Open();
             //cmd.Parameters.AddWithValue("@IncidentID", 1);
             cmd.Parameters.AddWithValue("@Status", "Problema encontrado");
@@ -48,6 +51,7 @@ namespace C_Presentacio
             cmd.Parameters.AddWithValue("@AgentID_FK", 1);
             cmd.Parameters.AddWithValue("@SupplierID_FK", 1);
             cmd.ExecuteNonQuery();
+            log.Info("Se solicitó la atención de un Agente");
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)

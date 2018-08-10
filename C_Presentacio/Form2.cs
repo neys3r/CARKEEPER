@@ -15,6 +15,8 @@ namespace C_Presentacio
 {
     public partial class Form2 : Form
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         Agent agente = new Agent();
         Database DB = new Database();
         
@@ -37,7 +39,8 @@ namespace C_Presentacio
 
         private void Form2_Load(object sender, EventArgs e)
         {
-            String ConnectionString = "Server=Winter2;Database=Winter;Trusted_Connection=true";
+            String ConnectionString = "Server=.;Database=Winter;Trusted_Connection=true";
+            log.Info("Conexión de Base de Datos Exitosa");
             var query = @"select top 1 A.AgentID, A.ID, A.Name from Agent A";
             var cnx = new SqlConnection(ConnectionString);
             var command = new SqlCommand(query, cnx);
