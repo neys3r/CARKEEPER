@@ -19,6 +19,8 @@ namespace C_Datos
                 conn.Open();
                 return conn;
             }
+
+
             catch (SqlException ex)
             {
                 return null;
