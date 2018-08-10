@@ -7,7 +7,7 @@ using System.Data.SqlClient;
 using System.Data;
 namespace C_Datos
 {
-    class Database
+    public class Database
     {
         private SqlConnection conn;
         public SqlConnection ConectarBD()
