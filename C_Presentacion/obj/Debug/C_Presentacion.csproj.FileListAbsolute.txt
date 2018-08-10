@@ -1,5 +1,0 @@
-C:\CARKEEPER\C_Presentacion\bin\Debug\C_Presentacion.dll
-C:\CARKEEPER\C_Presentacion\bin\Debug\C_Presentacion.pdb
-C:\CARKEEPER\C_Presentacion\obj\Debug\C_Presentacion.csproj.CoreCompileInputs.cache
-C:\CARKEEPER\C_Presentacion\obj\Debug\C_Presentacion.dll
-C:\CARKEEPER\C_Presentacion\obj\Debug\C_Presentacion.pdb

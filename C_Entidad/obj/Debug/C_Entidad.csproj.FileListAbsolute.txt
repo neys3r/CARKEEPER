@@ -1,5 +1,0 @@
-C:\CARKEEPER\C_Entidad\bin\Debug\C_Entidad.dll
-C:\CARKEEPER\C_Entidad\bin\Debug\C_Entidad.pdb
-C:\CARKEEPER\C_Entidad\obj\Debug\C_Entidad.csproj.CoreCompileInputs.cache
-C:\CARKEEPER\C_Entidad\obj\Debug\C_Entidad.dll
-C:\CARKEEPER\C_Entidad\obj\Debug\C_Entidad.pdb
