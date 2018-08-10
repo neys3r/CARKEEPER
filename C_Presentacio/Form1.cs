@@ -15,6 +15,21 @@ namespace C_Presentacio
         public Form1()
         {
             InitializeComponent();
+           
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            Form2 i = new Form2();
+            i.Show();
+            Form1 i2 = new Form1();
+            i2.Hide();
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }
