@@ -100,5 +100,15 @@
   <ItemGroup>
     <None Include="Resources\help.gif" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C_Datos\C_Datos.csproj">
+      <Project>{5dab7006-e99b-4a21-b208-98136420a849}</Project>
+      <Name>C_Datos</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\C_Entidad\C_Entidad.csproj">
+      <Project>{e3622e85-bc89-4997-a664-0e97e9065854}</Project>
+      <Name>C_Entidad</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
