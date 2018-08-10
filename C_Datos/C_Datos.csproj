@@ -61,5 +61,11 @@
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
     </EmbeddedResource>
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\C_Negocio\C_Negocio.csproj">
+      <Project>{39603170-6786-4928-a039-5393cc54cb44}</Project>
+      <Name>C_Negocio</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

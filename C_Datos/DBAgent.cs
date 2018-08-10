@@ -10,6 +10,8 @@ namespace C_Datos
 {
     public class DBAgent
     {
+        Database DB = new Database();
+        SqlConnection cn;
        
     }
 }
