@@ -25,7 +25,13 @@ namespace C_Presentacio
 
         private void button1_Click(object sender, EventArgs e)
         {
-            Form2 i = new Form2();
+            Ag_Form3 i = new Ag_Form3();
+            i.Show();
+        }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            Taller_Form3 i = new Taller_Form3();
             i.Show();
         }
     }

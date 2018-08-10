@@ -12,6 +12,8 @@ namespace C_Presentacio
 {
     public partial class Ag_Form3 : Form
     {
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
+
         public Ag_Form3()
         {
             InitializeComponent();
@@ -34,6 +36,19 @@ namespace C_Presentacio
             dataAdapter.Fill(dataSet);
             dataGridView1.AutoGenerateColumns = false;
             dataGridView1.DataSource = dataSet.Tables[0];
+            log.Info("El Agente 1 Aceptó la Incidencia 1");
+        }
+       
+
+        private void textBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Solicitud aceptada");
+           this.Close();
         }
     }
 }

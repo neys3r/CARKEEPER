@@ -11,18 +11,21 @@ using System.Windows.Forms;
 
 namespace C_Presentacio
 {
+
     public partial class Form1 : Form
     {
         private static readonly log4net.ILog log = log4net.LogManager.GetLogger(System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         public Form1()
         {
+           
             InitializeComponent();
            
         }
-
+        static bool activado = false;
         private void button1_Click(object sender, EventArgs e)
         {
+            
             Form2 i = new Form2();
             i.Show();
             this.Hide();
@@ -51,12 +54,28 @@ namespace C_Presentacio
             cmd.Parameters.AddWithValue("@AgentID_FK", 1);
             cmd.Parameters.AddWithValue("@SupplierID_FK", 1);
             cmd.ExecuteNonQuery();
-            log.Info("Se solicitó la atención de un Agente");
+            
+            
         }
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            
         }
     }
 }

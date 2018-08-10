@@ -50,13 +50,26 @@ namespace C_Presentacio
             dataAdapter.Fill(dataSet);
             dataGridView1.AutoGenerateColumns = false;
            dataGridView1.DataSource = dataSet.Tables[0];
-            
-           
+            log.Info("Se solicitó la atención de un Agente 1");
+
         }
 
         private void button1_Click(object sender, EventArgs e)
         {
             
+        }
+
+        private void button1_Click_1(object sender, EventArgs e)
+        {
+            
+                
+        }
+
+        private void button1_Click_2(object sender, EventArgs e)
+        {
+            Form1 jason = new Form1();
+            this.Hide();
+            jason.Show();
         }
     }
 }

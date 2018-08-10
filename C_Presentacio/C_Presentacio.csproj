@@ -74,6 +74,12 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Taller_Form3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Taller_Form3.Designer.cs">
+      <DependentUpon>Taller_Form3.cs</DependentUpon>
+    </Compile>
     <EmbeddedResource Include="Ag_Form3.resx">
       <DependentUpon>Ag_Form3.cs</DependentUpon>
     </EmbeddedResource>
@@ -96,6 +102,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
       <DesignTime>True</DesignTime>
     </Compile>
+    <EmbeddedResource Include="Taller_Form3.resx">
+      <DependentUpon>Taller_Form3.cs</DependentUpon>
+    </EmbeddedResource>
     <None Include="log4net.config">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
     </None>
