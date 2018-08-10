@@ -1,0 +1,9 @@
+C:\CARKEEPER\C_Presentacio\bin\Debug\C_Presentacio.exe.config
+C:\CARKEEPER\C_Presentacio\bin\Debug\C_Presentacio.exe
+C:\CARKEEPER\C_Presentacio\bin\Debug\C_Presentacio.pdb
+C:\CARKEEPER\C_Presentacio\obj\Debug\C_Presentacio.csprojAssemblyReference.cache
+C:\CARKEEPER\C_Presentacio\obj\Debug\C_Presentacio.Properties.Resources.resources
+C:\CARKEEPER\C_Presentacio\obj\Debug\C_Presentacio.csproj.GenerateResource.cache
+C:\CARKEEPER\C_Presentacio\obj\Debug\C_Presentacio.csproj.CoreCompileInputs.cache
+C:\CARKEEPER\C_Presentacio\obj\Debug\C_Presentacio.exe
+C:\CARKEEPER\C_Presentacio\obj\Debug\C_Presentacio.pdb
