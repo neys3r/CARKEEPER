@@ -22,8 +22,7 @@ namespace C_Presentacio
         {
             Form2 i = new Form2();
             i.Show();
-            Form1 i2 = new Form1();
-            i2.Hide();
+            this.Hide();
 
         }
 
