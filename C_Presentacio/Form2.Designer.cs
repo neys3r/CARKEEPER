@@ -100,6 +100,8 @@
             this.ClientSize = new System.Drawing.Size(325, 521);
             this.Controls.Add(this.panel2);
             //this.Name = "Form2";
+
+
             this.Text = "Form2";
             this.Load += new System.EventHandler(this.Form2_Load);
             this.panel2.ResumeLayout(false);
