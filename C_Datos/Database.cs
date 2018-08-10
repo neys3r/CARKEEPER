@@ -14,7 +14,7 @@ namespace C_Datos
         {
             try
             {
-                var cadenaconexion = "Server=Winter;Database=Winter;Trusted_Connection=True;";
+                var cadenaconexion = "Server=.;Database=Winter;Trusted_Connection=True;";
                 conn = new SqlConnection(cadenaconexion);
                 conn.Open();
                 return conn;
