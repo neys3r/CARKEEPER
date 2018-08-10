@@ -42,5 +42,9 @@ namespace C_Datos
             cmd.Parameters.AddWithValue("", c);
             cmd.ExecuteNonQuery();
         }
+
+
+
+        //fin
     }
 }
